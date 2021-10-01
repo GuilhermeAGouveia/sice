@@ -1,0 +1,341 @@
+#teste-root{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgb(210,210,210);
+}
+
+#title-home-sice{
+    position: relative;
+    padding-top:60px;
+    width: 100%;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 800;
+    background: rgb(20, 20, 109);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 3;
+    transition: height 1s;
+    overflow: hidden;
+    
+}
+#title-home-sice span {
+    position: absolute;
+    font-size: 13px;
+    bottom: 6px;
+    font-weight: 500;
+}
+
+#title-home-sice h2{
+    top: 0.2vh;
+}
+#display-pedidos-conteiner{
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+#display-pedidos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#display-pedidos input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    overflow: visible;
+    background: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgba(0,0,0,0.85);
+    
+ 
+}
+#display-pedidos label {
+    z-index: 0;
+    position: absolute;
+    font-size: 20px;
+    background: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    color: rgba(3, 0, 172, 0.85);
+    top: 0px;
+    transition: all 2s;
+}
+#hidden-header{
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    transform:rotate(0deg);
+    transition: transform 1s;
+}
+#table-choice-conteiner{
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: white;
+    width: 90vw;
+    margin:0px 5vw;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+    
+    border-top-left-radius:  10px;
+    border-top-right-radius:  10px;
+    transition: height 0.3s;
+    color: rgb(98, 25, 121);
+}
+
+
+#table-choice-content{
+    top: 40px;
+    position: relative;
+    width:90vw;
+    height: 70vh !important;
+    overflow: hidden;
+
+}
+
+#table-choice-content tr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    overflow: hidden;
+    margin: 0px 5%;
+}
+.chevron{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#chevron-up{
+    transform: rotate(0deg);
+    transition: transform 0.2s 0.3s;
+}
+
+#btn-prox-conteiner {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow:0px 0px 5px rgba(0,0,0,1);
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.3s;
+    overflow: hidden;
+}
+
+#btn-prox-conteiner button {
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+#options-input{
+    width: 90vw;
+    margin: 0px 5vw;
+    position: relative;
+    background: rgb(22, 22, 153);
+    border-radius: 6px;
+    overflow: hidden;
+
+
+}
+#options-input p {
+    padding-left: 3px;
+    background: rgb(0, 0, 65);
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    color:rgb(0, 230, 251);
+}
+#options-input p * {
+    margin: 3px;
+}
+#id-nominal-root{
+    padding: 5px 1px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+
+    
+}
+#name-conteiner{
+    width: auto;
+    position: relative;
+}
+
+#id-name{
+    width: 90%;
+    padding-left: 4px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid blue;
+    color:white;
+    font-family: sans-serif;
+}
+
+#conteiner-id-nominal{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-on-mesa {
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+    min-width: 30px;
+    width: 30px;
+    height: 17px;
+    background: rgb(182, 182, 182);
+
+    margin-right: 10px;
+}
+
+#more-icon {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+#menu-conteiner-garcon{
+    position: absolute;
+    width: 20vw;
+    right: 0px !important    ;
+    min-height: 20px;
+}
+#options-conteiner{
+    position: absolute;
+    color: white;
+    height:0px;
+    background: black;
+    width: 0px;
+    top: 3px;
+    padding: 0px;
+    right: 3px;
+    top: 3px;
+    border-radius: 4px;
+    font-size: 15px;
+
+    overflow: hidden;
+    transition:all 0.3s;
+    z-index: 2;
+
+}
+#menu-conteiner-garcon:hover #options-conteiner{
+    width:auto;
+    height: auto;
+    padding: 4px;
+}
+#options-conteiner div {
+        
+    position: relative;
+    right: 0px;
+    text-align: right;
+}
+#options-conteiner div+div {
+    margin-top: 3px;
+    
+}
+
+.btn-position-mesa {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 0px;
+    margin: 1px 0px;
+    background: gray;
+    border-radius: 10px;
+
+ 
+    transition: all 0.5s;
+}
+
+.table-select-conteiner{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
+    margin: 3px;
+
+}
+.table-select-conteiner input {
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.table-select-conteiner input:checked ~.checkmark-table {
+    opacity: 1;
+} 
+.checkmark-table {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    border: solid 2px green;
+    top: 0px;
+    opacity: 0;
+}
+
+.check-icon{
+    padding: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: green;
+}
+
+.option-name {
+    color: white;
+    font:12px sans-serif;
+}
+#icon-user {
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    transition: all 0.3s;
+}

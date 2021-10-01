@@ -1,0 +1,135 @@
+#header-conteiner {
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    top: 0px;
+    background: black;
+    z-index: 1;
+}
+
+#menu-conteiner {
+    width: 40px;
+}
+
+#login {
+    position: absolute;
+    text-decoration: none;
+    top: 0px;
+    right: 20px;
+    height: 100%;
+    width: 90px;
+    font-size: 18px;
+    background: rgb(24, 24, 24);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.menu-lines {
+    width: 30px;
+    height: 2px;
+    background: white;
+    padding-top: 4px;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+#top {
+    background: black;
+    padding-bottom: 50px;
+}
+
+#menu-conteiner button {
+    position: absolute;
+    left: 0px;
+}
+
+#menu {
+    z-index: 2;
+    width: 0vw;
+    position: fixed;
+    background: black;
+    top: 0px;
+    left: 0px;
+    color: white;
+    height: 100vh;
+    filter: opacity(0.9);
+    transition: width 2s;
+    overflow: hidden;
+}
+
+#btn-close {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    background: red;
+}
+
+#content-menu {
+    position: absolute;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.conteiner-btn {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.conteiner-btn h1 {
+    text-align: center;
+}
+
+.conteiner-btn button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #1C1C1C;
+    cursor: pointer;
+    border: none;
+    border-bottom: solid 2px #4F4F4f;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#barra1 {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: white;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.conteiner-btn button:hover #barra1 {
+    opacity: 1;
+}
+
+#btn1 {
+    border-top: solid 2px #4F4F4f;
+}
+
+#version {
+    position: absolute;
+    bottom: 4px;
+    right: 3px;
+}
+
+@media only screen and (max-width:500px) {
+    #login {
+        right: 0px;
+    }
+}

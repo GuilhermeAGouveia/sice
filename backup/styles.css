@@ -1,0 +1,125 @@
+#cad-root {
+    width: 100%;
+    background: rgb(200, 200, 200);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-cad {
+    padding: 20px 20px;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    position: relative;
+}
+
+#content-cad form {
+    padding-left: auto;
+    margin-left: auto;
+    width: 400px;
+    text-align: center;
+}
+
+button {
+    padding-left: 4px;
+    position: absolute;
+    margin-top: 20px;
+    height: 30px;
+    border: solid rgb(102, 97, 97) 2px;
+    background: transparent;
+    border-right: none;
+}
+
+#content-cad section h1 {
+    display: block;
+    position: absolute;
+    margin-left: 0px;
+    top: 30px;
+    left: 30px;
+    color: green;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.input-text {
+    display: none;
+    text-align: left;
+    transition: border 1.2s;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    border: solid rgb(102, 97, 97) 2px;
+    text-transform: capitalize;
+    padding: 0 5px;
+    background: rgb(241, 241, 241);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    font-size: 17px;
+    border-left: none;
+}
+
+#btn-submit {
+    position: relative;
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn-icons {
+    display: none;
+}
+
+@media only screen and (max-width:500px) {
+    .input-text {
+        width: 240px;
+    }
+    #content-cad {
+        display: block;
+    }
+    h1 {
+        top: 1px;
+    }
+    #cad-root {
+        display: flex;
+        align-items: center;
+    }
+    #content-cad form {
+        text-align: center;
+        margin-left: -45px;
+        margin-top: 25px;
+    }
+    section p {
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+    }
+    #content-cad section h1 {
+        position: relative;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-height:400px) {
+    .input-text {
+        width: 200px;
+    }
+    #content-cad section h1 {
+        left: 3px;
+    }
+    #btn-icons {
+        padding-left: 2px;
+    }
+}

@@ -1,0 +1,185 @@
+.login-root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 100vh;
+}
+
+#background-login {
+    position: absolute;
+    background-color: black !important;
+    background-image: url('./assets/img2.jpg') !important;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    filter: brightness(0.15)
+}
+
+.login-content {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    padding: 50px 200px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.login-content h1 {
+    margin-bottom: 20px;
+    font-family: 'sans-serif', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.box-login-info {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    bottom: -5px;
+    transition: opacity 0.5s;
+    opacity: 0;
+    display: block;
+}
+
+#cadicon {
+    position: absolute;
+    left: 3px;
+}
+
+#conteiner-btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0px;
+}
+
+#conteiner-btn-submit button {
+    padding: 10px 10px;
+    margin-top: 20px;
+    background: black;
+    width: 250px;
+    height: 100%;
+    border-radius: 2px;
+    border: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: wheat;
+    cursor: pointer;
+}
+
+#link {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    top: 13px;
+    right: 13px;
+    background: forestgreen;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    transition: width 1s;
+    border: solid black 2px;
+}
+
+#link_text {
+    position: relative;
+    margin-left: 28px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+
+#link_text:hover {
+    color: gainsboro;
+}
+
+.input-login-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    height: 42.5px;
+    margin: 0px 20%;
+}
+
+.icon-login {
+    position: absolute;
+    left: 3px;
+}
+
+#icon-eye-conteiner {
+    position: absolute;
+    right: 14px;
+    height: 18px;
+    width: 18px;
+}
+
+#icon-eye {
+    position: absolute;
+}
+
+#barrel {
+    position: absolute;
+    transform: rotate(45deg);
+    height: 2px;
+    width: 18px;
+    top: 8px;
+    left: 8px;
+    background: black;
+    transition: width 0.5s;
+}
+
+.input-login {
+    width: 100%;
+    padding: 0px 22px;
+    height: 25px;
+    border: 2px solid rgb(77, 77, 77);
+}
+
+.input-login:focus {
+    border-color: black;
+}
+
+@media only screen and (max-height:500px) {
+    .login-root {
+        width: 100%;
+        padding: auto;
+    }
+    .login-content {
+        padding: 20px 50px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .login-root {
+        width: 100vw;
+        padding: auto;
+    }
+    .login-content {
+        width: 100vw;
+        display: block;
+        padding: 10px 0px;
+        border-radius: 0px;
+    }
+    #conteiner-btn-submit {
+        justify-content: space-around;
+        margin: 20px 0px;
+        width: 100%;
+    }
+    #conteiner-btn-submit button {
+        margin: 0px;
+        width: 150px;
+        font-size: 14px;
+    }
+}

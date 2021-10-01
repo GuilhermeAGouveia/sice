@@ -1,0 +1,145 @@
+#msg-login-root {
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 4;
+    background: rgba(10, 10, 10, 0.97);
+    animation: display-root 1s;
+}
+
+.msg-login::-webkit-scrollbar {
+    width: 4px;
+    height: 90% !important;
+    background: rgb(200, 200, 200);
+}
+
+.msg-login::-webkit-scrollbar-corner {
+    background: black;
+    width: 4px;
+}
+
+.msg-login {
+    top: 20vh;
+    background: rgb(240, 240, 240);
+    position: absolute;
+    height: auto;
+    max-height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px rgb(83, 83, 83);
+    padding: 10px;
+    z-index: 3;
+    animation: msg-root 0.5s linear;
+}
+
+#title-msg-login {
+    position: relative;
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.text-msg-login {
+    font-family: sans-serif;
+    position: relative;
+    text-align: justify;
+    font-weight: 600;
+    color: rgb(80, 80, 80);
+    margin: 0px 5%;
+    overflow: hidden;
+    width: 90%;
+    padding: 20px 10px;
+    font-size: 11px;
+}
+
+.text-msg-login ul {
+    position: relative;
+    margin: 10px 0px;
+    color: rgb(50, 50, 50);
+    ;
+}
+
+.text-msg-login ul li {
+    list-style: none;
+}
+
+.options-msg-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options-msg-login button {
+    background: rgb(240, 240, 240);
+    border: none;
+    font-size: 15px;
+    color: teal;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    pointer-events: stroke;
+    transition: box-shadow 0.23s;
+}
+
+.options-msg-login button:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+@media only screen and (max-height:500px) {
+    .msg-login::-webkit-scrollbar {
+        display: none;
+    }
+    .msg-login::-webkit-scrollbar-corner {
+        background: black;
+        width: 4px;
+    }
+    .msg-login {
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .msg-login::-webkit-scrollbar {
+        display: none;
+    }
+    .msg-login::-webkit-scrollbar-corner {
+        background: black;
+        width: 4px;
+    }
+    .options-msg-login button {
+        font-size: 12px;
+    }
+    .msg-login {
+        width: 80vw;
+        overflow: scroll;
+    }
+}
+
+@keyframes display-root {
+    from {
+        background: rgba(10, 10, 10, 0);
+    }
+    to {
+        background: rgba(10, 10, 10, 0.97);
+    }
+}
+
+@keyframes msg-root {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: 20vh;
+    }
+}

@@ -1,0 +1,171 @@
+#editor-root {
+    position: relative;
+    background: black;
+    height:100% !important;
+
+    width: 100vw;
+    
+    left: 0px;
+    padding-top: 50px;
+    display: block;
+}
+
+#btn-fg,
+#btn-bg {
+    font-weight: 900;
+    color: white;
+}
+
+#box-click {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-edit-conteiner {
+    margin-top: 50px;
+    width: 100vw;
+    background: rgb(24, 24, 24);
+    min-height: 50px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px royalblue;
+    position: relative;
+    min-width: 500px;
+}
+
+#menu-edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#menu-edit button {
+    background: none;
+    border: none;
+    height: 100%;
+    border-left: 2px solid royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+input::placeholder {
+    color: black;
+}
+
+#title-edit {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#menu-edit img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*
+
+#title-cardapio {
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+#title-cardapio h2+h2 {}
+
+.cardapio-conteiner {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.cardapio {
+    width: 90%;
+    padding: 20px 0px;
+    display: block;
+    background: white;
+    max-height: 29cm;
+    max-width: 22cm;
+}
+
+.table-conteiner {
+    display: flex;
+    margin-top: 50px;
+}
+
+#row {
+    width: 4%;
+    max-width: 40px;
+    display: block;
+    text-align: center;
+    background: rgb(40, 40, 40);
+    position: absolute;
+    color: white;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+#row p {
+    margin-bottom: 7px;
+    height: 15px;
+}
+
+#row p+p {}
+
+#table-root {
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective-origin: center;
+    position: relative;
+    transform: rotate3d(0, 1, 1, 0deg);
+    width: 100vw;
+    transition: 2s all;
+}
+*/
+
+#table-conteiner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    transform-style: preserve-3d;
+    perspective-origin: center;
+    padding-bottom: 400px;
+    background: black !important;
+    height: 100%;
+    z-index: 2;
+}
+
+#status-cardapio {
+    background: royalblue;
+    padding: 2px 5px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+@media only screen and (max-width:500px) {
+    #menu-edit-root {
+        overflow-x: scroll;
+    }
+}

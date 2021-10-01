@@ -1,0 +1,59 @@
+#indisponivel {
+    position: absolute;
+    color: rgb(219, 210, 219);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    background: rgb(24, 24, 24);
+    top: 0px;
+}
+
+#content-main {
+    display: none;
+}
+
+#info-content-4 {
+    position: absolute;
+    top: 0px;
+    right: 8px;
+}
+
+#info-content-4::before {
+    right: 0px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Esta seção só estará disponível após um ano de funcionamento do sistema, pois antes disso, ela não terá utilidade";
+    position: absolute;
+    height: auto;
+    color: rgb(185, 185, 185);
+    background: white;
+    box-shadow: 0px 0px 4px black;
+    font-size: 10px;
+    border-radius: 7px;
+    z-index: 1;
+    width: 0vw;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+#info-content-4:hover::before {
+    width: 30vw;
+    height: 60px;
+    padding: 5px 8px;
+    background: rgb(0, 46, 211);
+}
+
+@media only screen and (max-width:500px) {
+    #info-content-4:hover::before {
+        width: 40vw;
+    }
+}

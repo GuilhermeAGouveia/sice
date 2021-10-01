@@ -1,0 +1,90 @@
+#pag-root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    background: rgb(10, 10, 10);
+    padding-bottom: 10vh;
+}
+
+.mesa-input-pag {
+    margin-top: 100px;
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mesa-input-pag input {
+    position: absolute;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    width: 70px;
+    background: rgb(24, 24, 24);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    height: 25px;
+}
+
+.mesa-input-pag label {
+    color: blue;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 700;
+    top: 41px;
+    transition: all 0.2s;
+}
+
+.options-pag {
+    margin-top: 5vh;
+    height: 60vh;
+    display: block;
+    width: 150px;
+    margin: 5vh auto;
+}
+
+.options-pag button {
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+    border-radius: 10px;
+    background: blue;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 10px blue;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.options-pag button:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+@media only screen and (max-height:500px) {
+    .options-pag {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    .options-pag button {
+        width: 30%;
+        margin: 0vh;
+        height: 30vh;
+        margin-top: 0px;
+    }
+    #pag-root {
+        padding-top: 10vh;
+    }
+    .mesa-input-pag {
+        margin-top: 40px;
+    }
+}

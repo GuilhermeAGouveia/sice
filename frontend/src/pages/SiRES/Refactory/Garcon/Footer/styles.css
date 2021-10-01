@@ -1,0 +1,40 @@
+
+  #footer-items{
+    background:  rgb(44, 0, 58);
+    height: 10vh;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    margin-top:10vh;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  #conf {
+    color: gray;
+
+    transition: color 1s;
+    
+  }
+  
+  .btn-flutt{
+    top:-30px;
+    position: relative;
+    background:white ;
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hidden{
+    display: none;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+  }
+  
+  
+  

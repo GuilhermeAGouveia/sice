@@ -1,0 +1,37 @@
+  .box-root {
+      z-index: 1;
+      background: rgb(47, 47, 47);
+      border: royalblue 2px solid;
+      box-shadow: 0px 10px 10px royalblue;
+      width: 60vw;
+      height: 30vh;
+      min-height: 150px;
+      animation: box-aparence 0.5s linear;
+      transform-origin: top;
+      perspective-origin: center;
+      position: relative;
+      user-select: none;
+  }
+  
+  .title {
+      text-align: center;
+      margin: 0px 0px;
+      color: white;
+      margin-top: 10px;
+  }
+  
+  @keyframes box-aparence {
+      from {
+          transform: translate3d(0px, 0px, 1000px) rotate3d(1, 0, 0, 90deg);
+      }
+      to {
+          transform: translate3d(0px, 0px, 0px) rotate3d(1, 0, 0, 0deg);
+      }
+  }
+  
+  @media only screen and (max-width:500px) {
+      .box-root {
+          width: 90vw;
+          height: 25vh;
+      }
+  }

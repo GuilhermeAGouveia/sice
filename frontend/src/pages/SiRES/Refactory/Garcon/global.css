@@ -1,0 +1,32 @@
+.items-root{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+
+#section-garcon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+    height: 55vh;
+    width: 300vw;
+    left: 0vw;
+    transition: left 0.5s;
+}
+.conteiner-garcon{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+   
+}
+
+#mesa-conteiner,#obs-conteiner{
+    z-index: 2;
+    background: white;
+    height: 65vh;
+}
+#items-conteiner {
+    z-index: 0;
+}

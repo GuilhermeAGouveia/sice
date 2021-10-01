@@ -1,0 +1,29 @@
+
+  #header-items{
+    position: absolute;
+    background:rgb(44, 0, 58); /*rgb(98, 05, 171);*/
+    height: 25vh;
+    width: 100vw;
+  
+    text-align: center;
+    color: white;
+    z-index: 2;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+  #header-items h1 {
+    caret-color: auto;
+    color: white;
+    font-size:30px;
+    margin-top: 45px;
+    font-family: sans-serif;
+  }
+  
+  .footer-header-items{
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+  }

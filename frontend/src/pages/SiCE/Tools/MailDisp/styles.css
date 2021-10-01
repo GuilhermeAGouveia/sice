@@ -1,0 +1,441 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+    border-radius: 7px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+li p {
+    margin-left: 30px;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*END estilização checkbox */
+
+#tools-conteiner {
+    position: relative;
+    height: 10%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 3px solid rgb(47, 47, 47);
+}
+
+#conteiner-line {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background: rgb(47, 47, 47);
+    padding: 0px 20px;
+}
+
+#line-select {
+    top: -2px;
+    position: absolute;
+    height: 4px;
+    width: 34.7vw;
+    max-width: 285px;
+    background: rgb(54, 34, 165);
+    transition: margin-left 1s, width 1s;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    color: white !important;
+    font-size: 4vw !important;
+}
+
+
+/* para visualização de estado */
+
+
+/*#line-select {
+    top: -2px;
+    position: absolute;
+    height: 4px;
+    width: 400px;
+    margin-left: 450px;
+    background: teal;
+} */
+
+#maildisp-root {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+#maildisp-root h1 {
+    color: rgb(54, 34, 165);
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+#maildisp-conteiner {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 10%;
+    margin-top: 7%;
+    display: block;
+    background: rgb(34, 34, 34);
+    border-radius: 20px;
+    padding: 10% 10%;
+    border: 2px solid rgb(54, 34, 165);
+    box-shadow: 0px 0px 40px rgb(54, 34, 165);
+}
+
+#conteiner-input-title {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#conteiner-input-title input {
+    background-color: rgb(65, 65, 65);
+    border: none;
+    height: 25px;
+    color: white;
+    padding-left: 4px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+#conteiner-input-title label {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: top 1s, font-size 1s;
+}
+
+#conteiner-text-mail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner-text-mail label {
+    position: absolute;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: rgb(54, 34, 165);
+    top: 5px;
+    left: 5px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#text-mail {
+    width: 100%;
+    border: solid 2px rgb(54, 34, 165);
+    overflow: scroll;
+    font-family: sans-serif;
+    padding: 5px 5px;
+}
+
+.conteiner-select-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+#select-all {
+    background: green;
+    border: none;
+    padding: 5px 5px;
+    font-weight: 700;
+    color: white;
+    width: 20%;
+    min-width: 100px;
+    max-width: 200px;
+    font-size: 11px;
+}
+
+.op-select {
+    position: relative;
+    height: 300px;
+    overflow: scroll;
+    /*overflow-x: hidden;*/
+    background: rgb(65, 65, 65);
+    color: white;
+    padding: 5px 5px;
+}
+
+.itens-mails {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.values-select {
+    position: relative;
+    left: -20px;
+    width: 100px;
+}
+
+#conteiner-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s;
+}
+
+#conteiner-search button {
+    background: none;
+    position: absolute;
+    right: 0px;
+    border: none;
+    transition: position 2s;
+    cursor: pointer;
+}
+
+#conteiner-search input {
+    right: 10px;
+    position: relative;
+    transition: opacity 2s;
+    margin-right: 10px;
+    text-align: center;
+    background: rgb(65, 65, 65);
+    border: none;
+    border-bottom: 2px solid white;
+    height: 20px;
+    max-width: 300px;
+    width: 0px;
+    transition: width 2s;
+}
+
+.button-submit {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#submit {
+    padding: 7px 10px;
+    background: black;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+#load-mail-send {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 5px;
+    background: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#load-mail-send div {
+    width: 40vw;
+}
+
+#line1 {
+    position: absolute;
+    height: 100%;
+    background: rgb(54, 34, 165);
+    animation: line1 2s linear infinite;
+}
+
+#line2 {
+    position: absolute;
+    height: 100%;
+    background: green;
+    animation: line2 1.5s linear infinite;
+}
+
+#line3 {
+    position: absolute;
+    height: 100%;
+    background: rgb(65, 65, 65);
+    animation: line3 2.5s linear infinite;
+}
+
+#select-header {
+    margin: 30px 0px;
+}
+
+#radio-model-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#text-options p {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+#view-options {
+    position: relative;
+    border: 2px solid rgb(54, 34, 165);
+    overflow: hidden;
+    height: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    #maildisp-root {}
+    #maildisp-root h1 {
+        font-size: 18px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #conteiner-input-title input {
+        height: 20px;
+    }
+    #conteiner-input-title label {
+        font-weight: 600;
+    }
+    #tools-conteiner {
+        padding-top: 8px;
+    }
+    #conteiner-line {
+        padding: 0px 4px;
+    }
+    #select-all {
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@keyframes line1 {
+    from {
+        margin-left: -1000px;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes line2 {
+    from {
+        margin-left: -1000px;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes line3 {
+    from {
+        margin-left: -1000px;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+.re {
+    color: rgb(38, 0, 255);
+}

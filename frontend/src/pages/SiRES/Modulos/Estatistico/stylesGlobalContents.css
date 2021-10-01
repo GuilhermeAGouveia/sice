@@ -1,0 +1,338 @@
+.resumo {
+    position: relative;
+    width: 100%;
+}
+
+.resumo p {
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 100%;
+    background: rgb(20, 20, 200);
+    position: relative;
+    margin: 0px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-diario {
+    position: relative;
+    margin: 0px;
+    min-height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    position: relative;
+    background: rgb(10, 10, 10);
+    min-height: 100px;
+    min-width: 100px;
+    width: 10%;
+}
+
+.bar button {
+    width: 100%;
+    background: none;
+    border: none;
+    height: 30px;
+    font-weight: 600;
+    color: blue;
+}
+
+.content-bar-selection {
+    width: 90%;
+    min-height: 100px;
+    background: rgb(24, 24, 24)
+}
+
+#cont-box-1 {
+    background: rgb(24, 14, 126);
+    color: white;
+}
+
+.content-bar-selection div {
+    width: 100%;
+}
+
+.content-box {
+    position: relative;
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+#content-box-1,
+#content-box-2-1,
+#content-box-3-1,
+#content-box-4-1 {
+    display: block;
+    align-content: center;
+}
+
+.content-box div {
+    position: relative;
+    width: 90%;
+    margin: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#result-search {
+    display: none;
+}
+
+.data-s {
+    position: relative;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.icon-info {
+    margin-left: 5px;
+    width: 11px;
+    height: 11px;
+    top: 0px;
+    position: absolute;
+    z-index: 3;
+}
+
+.icon-info::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Cálculo da porcentagem de ganhos entre hoje, e o penultimo dia registrado.";
+    position: absolute;
+    height: auto;
+    color: rgb(185, 185, 185);
+    background: white;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 7px;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    transition: all 0.3s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.icon-info:hover::before {
+    width: 30vw;
+    height: 60px;
+    padding: 5px 8px;
+    background: rgb(0, 46, 211);
+}
+
+.title-date-box-3 {
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 100%;
+    background: rgb(20, 20, 200);
+    position: relative;
+    margin: 0px;
+    height: 35px;
+    justify-content: space-around !important;
+}
+
+.search-day-conteiner {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    background: rgb(24, 24, 24);
+    min-height: 100px;
+}
+
+.search-day {
+    background: rgb(40, 40, 180);
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#search-input {
+    background: rgb(40, 40, 240);
+    border: blue solid 2px;
+    box-shadow: 0px 0px 5px blue;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+}
+
+.search-input-conteiner {
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.result-search {
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-search-conteiner {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-search-conteiner2 span {
+    color: blue;
+    font-size: 60px;
+    text-shadow: 0px 0px 3px blue;
+}
+
+#load-search-conteiner2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-search-conteiner span {
+    color: blue;
+    font-size: 60px;
+    text-shadow: 0px 0px 3px blue;
+}
+
+#load-search-conteiner span:nth-last-of-type(1) {
+    animation: points-load 1s 0.8s infinite;
+}
+
+#result-search-conteiner {
+    position: relative;
+    width: 100%;
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#result-search-conteiner div {
+    position: relative;
+    width: 90%;
+    margin: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#items-detail-conteiner {
+    position: relative;
+    width: 100%;
+    display: block !important;
+    text-align: center;
+    background: transparent;
+    overflow: hidden;
+    height: 30px;
+    /*transition: all 1s;*/
+}
+
+#btn-item-display {
+    position: relative;
+    border: none;
+    top: 0px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: sans-serif;
+    display: flex;
+    box-shadow: 0px 0px 5px black;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: blue;
+}
+
+#items-detail {
+    width: 100%;
+    position: relative;
+    display: block !important;
+    background: rgb(4, 23, 52);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.item-detail-row {
+    width: 100%;
+    position: relative;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 20px;
+}
+
+#erro {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.name-detail {
+    position: relative;
+    width: 50%;
+    text-align: left !important;
+}
+
+#load-search-conteiner span:nth-last-of-type(2) {
+    animation: points-load 1s 0.4s infinite;
+}
+
+#load-search-conteiner span:nth-last-of-type(3) {
+    animation: points-load 1s 0s infinite;
+}
+
+@keyframes points-load {
+    0% {
+        margin-top: 0px;
+        margin-left: 0px;
+        color: rgb(10, 10, 170);
+        text-shadow: 0px 0px 3px rgb(10, 10, 170);
+    }
+    50% {
+        margin-top: -20px;
+        margin-left: 0px;
+        color: blue;
+        text-shadow: 0px 0px 3px blue;
+    }
+    100% {
+        margin-top: 0px;
+        color: rgb(10, 10, 170);
+        margin-left: 0px;
+        text-shadow: 0px 0px 3px rgb(10, 10, 170);
+    }
+}

@@ -1,0 +1,77 @@
+.title-box {
+    text-align: center;
+    margin: 0px 0px;
+    color: white;
+    margin-top: 10px;
+}
+
+#insert {
+    color: royalblue;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 5vh 25%;
+}
+
+.buttons button {
+    background: rgb(24, 24, 24);
+    color: white;
+    border: none;
+    padding: 3px 4px;
+}
+
+.btn-on {
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+    width: 16px;
+    height: 10px;
+    background: white;
+    margin-right: 10px;
+}
+
+.btn-position {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: gray;
+    border-radius: 10px;
+    top: -3px;
+    left: -7.5px;
+    transition: all 0.5s;
+}
+
+#sempre-end {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#option-insert {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    .title-box {
+        font-size: 18px;
+    }
+    #insert {
+        font-size: 14px;
+        margin: 2vh;
+    }
+    .buttons {
+        margin: 2vh 25%;
+    }
+    #option-insert {
+        font-size: 15px;
+    }
+}

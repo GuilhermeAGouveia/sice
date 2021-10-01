@@ -1,0 +1,148 @@
+/*select personalizado*/
+
+#select-root{
+    position: fixed;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    height: 40vh;
+
+    width: 100vw;
+    bottom: -40vh;
+    overflow: hidden;
+    border-radius:10px;
+    background: white;
+    z-index: 99;
+    transition: bottom 0.3s;
+  
+  }
+  #header-select{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  
+  
+  }
+  
+  
+  #header-select span {
+    color: white;
+    cursor: pointer;
+    background: rgb(104,0,148);
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+      overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+  
+  
+  }
+  #header-select span+span {
+    opacity: 0.6;
+  }
+  #op-1 {
+    opacity: 1;
+  }
+  #section-select{
+    margin-top: 35px;
+    position: relative;
+    width: 200vw;
+    left: 0vw;
+    
+    overflow: hidden;
+    display: flex;
+    transition: left 0.3s;
+  
+  }
+  .options-conteiner{
+    width: 100vw;
+    position: relative;
+    height: 30vh;
+    overflow-y: scroll;
+  
+  }
+  .options{
+    position: relative;
+    height: 25px;
+    width: 70%;
+    margin:5px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(90deg,rgb(210,210,210),rgb(200,200,200));
+    border-radius: 12.5px;
+    padding:0px 10px;
+    padding-left: 5px;
+  }
+  .checkbox-select{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -30px;
+    background: rgb(44,0,248);
+    transition: left 0.2s;
+    border: 2px solid rgb(104,24,178);
+  
+  }
+  .comidas-input{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  
+  
+  }
+  .comidas-input:checked ~.checkbox-select{
+    left: 0px;
+  }
+  .options label {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(44,0,248);
+    font-weight: 600;
+    width: 60%;
+    position: relative;
+    text-align: right;
+     
+  
+  }
+  
+  .letter-conteiner{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .letter-content{
+    display: flex;
+    align-items: center;
+  }
+  .line1 {
+    height: 1px;
+    width: 10%;
+    background: rgba(0,0,0,0.5);
+  }
+  .line2 {
+    height: 1px;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+  }
+  .letters {
+    width: 10%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+  }

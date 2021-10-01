@@ -1,0 +1,21 @@
+#op1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.title-view {
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    color: rgb(54, 34, 165);
+    background: gray;
+    height: 100%;
+}
+
+.header-title {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}

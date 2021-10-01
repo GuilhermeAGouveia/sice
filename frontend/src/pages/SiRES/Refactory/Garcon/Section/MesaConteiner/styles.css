@@ -1,0 +1,184 @@
+#mesa-content{
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  overflow: hidden;
+  
+  
+}
+
+ .input-number-in {
+  
+    padding-left: 10px;
+
+    width: 80px;
+    z-index: 1;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    opacity: 0;
+    color: rgb(84,84,84);
+    font-family: sans-serif;
+   
+    font-weight: bold;
+    text-align: center;
+  
+  
+  }
+  .number-in{
+    top: 20px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+  .conteiner-input{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  
+  }
+ .label-number-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    position: absolute;
+    font-family: sans-serif;
+    color: rgb(200,200,200);
+    width:100px;
+    
+    height: 100%;
+    font-size: 20px;
+    overflow: hidden;
+    background:rgb(104,24,178);
+    z-index: 0;
+  
+    transition: all 0.4s;
+  }
+  #content-2-2,#content-1-2{
+    display: none;
+  }
+  
+  /* check mesa*/
+  #table-choice-conteiner{
+    position: absolute;
+    margin: 15% 0px;
+    width: 20px;
+    overflow: hidden;
+  
+    right: 0px;
+    background: white;
+    height: 70%;
+    
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+    
+    border-top-left-radius:  10px;
+    border-bottom-left-radius:  10px;
+    transition: width 0.3s;
+    color: rgb(98, 25, 121);
+}
+
+
+#table-choice-content{
+  
+    position: absolute;
+    width:80%;
+    top: 5% ;
+    height: 70%;
+    overflow: hidden;
+    overflow-y: scroll;
+  
+    right: 0px !important;
+    z-index: 0;
+    
+  
+
+}
+
+.chevron{
+    z-index: 1;
+   
+    height: 100%;
+    position: absolute;
+    width: 20px;
+    background: white;
+
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    /*border-right: 1px solid rgba(0, 0, 0, 0.4);*/
+    align-items: center;
+    
+    
+}
+
+#chevron-up{
+    transform: rotate(0deg);
+    transition: transform 0.2s 0.3s;
+}
+
+.table-select-conteiner{
+  float: left;
+  position: relative;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  box-shadow:0px 0px 5px rgba(0,0,0,0.9);
+  margin: 3px;
+
+}
+.table-select-conteiner input {
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.table-select-conteiner input:checked ~.checkmark-table {
+  opacity: 1;
+} 
+.checkmark-table {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  border: solid 2px green;
+  top: 0px;
+  opacity: 0;
+}
+
+.check-icon{
+  padding: 1px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: green;
+}
+#text-check-table{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding-left: 20px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*checkbox Mesas end*/
+
